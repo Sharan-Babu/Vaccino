@@ -475,6 +475,16 @@ if result:
                 st.info("Fetch appointments first.")    
 
         elif intent == 'app_details':
+            answer = """I am an application here to help you with your vaccination needs."""
+
+            ssml_string = open("ssml.xml", "r").read().replace("my-sentence",answer).replace("my-lang","en-US").replace("my-voice","en-US-AriaRUS").replace("my-speed","0.9")   
+
+            with st.spinner("Fetching Audio..."):
+                result = synthesizer.speak_ssml_async(ssml_string).get()
+                stream = AudioDataStream(result)
+                stream.save_to_wav_file("st_file1.wav") 
+                time.sleep(0.1)
+                st.audio("st_file1.wav")                       
             components.html("""Vaccino is a Wit.ai powered application that strives
                 to help people in India combat the fast spreading second wave
                 of the corona virus.<br> <br>
