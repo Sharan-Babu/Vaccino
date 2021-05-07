@@ -1,0 +1,9 @@
+streamlit
+wit
+azure-cognitiveservices-speech==1.16.0
+azure-cognitiveservices-vision-computervision==0.7.0
+azure-common==1.1.26
+bokeh
+streamlit-bokeh-events
+pandas
+email
