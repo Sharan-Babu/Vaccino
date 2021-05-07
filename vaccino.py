@@ -115,7 +115,7 @@ if result:
                     password = st.secrets["password"]
                     
                     msg = MIMEMultipart('alternative')
-                    msg['Subject'] = "Link of appointment"
+                    msg['Subject'] = "Appointment Details"
                     msg['From'] = me
                     msg['To'] = you
                     
@@ -128,7 +128,7 @@ if result:
                     </div>
                     <br>
                     """
-                    text = "Details of the appointments you are interested in:"
+                    end_html = 'Book <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_IN&gl=US">Here</a>.'
 
                     final_html = ""
                     input_df = pd.read_csv('data_file.csv')
@@ -146,10 +146,10 @@ if result:
 
                         final_html += base_html.format(x,h_name,b_name,Pin,Date,Vaccine,Capacity,Age,Timing,Fees)
 
-                    #part1 = MIMEText(text, 'plain')
+                    part3 = MIMEText(end_html, 'html')
                     part2 = MIMEText(final_html, 'html')
-                    #msg.attach(part1)
                     msg.attach(part2)
+                    msg.attach(part3)
 
 
                     # Password to be replaced when deploying
