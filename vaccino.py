@@ -500,7 +500,7 @@ if result:
                 <li> What can you do? </li>
                 <li> Why should I trust you? </li> 
                 <li> Any information related to vaccines </li>
-                <li> Fetch some details about status of oxygen cylinders in india </li>
+                <li> Fetch some details about status of oxygen cylinders in India </li>
                 <li> Show vaccination appointments available in Alwar </li>
                 <li> Email me the details of the appointments 1 and 21. </li>
                 
