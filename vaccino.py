@@ -497,7 +497,7 @@ if result:
                 
             components.html("""<br><b>Privacy</b>: <br>
                 No user data is stored. Your voice is used only to capture the intent and understand your need.
-                All information has been retrieved by trusted and publicly available APIs like CoWin official API
+                All information shown has been retrieved from trusted and publicly available APIs like CoWin official API
                 for vaccine slot booking.
                 """)
 
