@@ -363,8 +363,7 @@ if result:
 
             answer = """Here are the available slots in your district.
                     You can choose to see only few rows by saying, 'show only first few rows'.
-                    Else, make a note of the appointment IDs you are interested in and email the 
-                    relevent information to yourself by saying, 'Email me the appointments' followed by their corresponding row numbers.
+                    Else, make a note of the appointment IDs you are interested in and email the relevant information to yourself by saying, 'Email me the appointments' followed by their corresponding row numbers.
                     """
 
             ssml_string = open("ssml.xml", "r").read().replace("my-sentence",answer).replace("my-lang","en-US").replace("my-voice","en-US-AriaRUS").replace("my-speed","0.9")   
