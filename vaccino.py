@@ -128,7 +128,7 @@ if result:
                     </div>
                     <br>
                     """
-                    end_html = 'Book <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_IN&gl=US">Here</a>.'
+                    
 
                     final_html = ""
                     input_df = pd.read_csv('data_file.csv')
@@ -145,11 +145,11 @@ if result:
                         Fees = input_df.loc[x,"Fees"]
 
                         final_html += base_html.format(x,h_name,b_name,Pin,Date,Vaccine,Capacity,Age,Timing,Fees)
-
-                    part3 = MIMEText(end_html, 'html')
+                    final_html += "<br>Book <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_IN&gl=US">Here</a>."
+                    #part3 = MIMEText(end_html, 'html')
                     part2 = MIMEText(final_html, 'html')
                     msg.attach(part2)
-                    msg.attach(part3)
+                    #msg.attach(part3)
 
 
                     # Password to be replaced when deploying
