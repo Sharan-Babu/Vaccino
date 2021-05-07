@@ -496,6 +496,16 @@ if result:
 
 
         elif intent == 'help':
+            answer = """Try one of the following utterances."""
+
+            ssml_string = open("ssml.xml", "r").read().replace("my-sentence",answer).replace("my-lang","en-US").replace("my-voice","en-US-AriaRUS").replace("my-speed","0.9")   
+
+            with st.spinner("Fetching Audio..."):
+                result = synthesizer.speak_ssml_async(ssml_string).get()
+                stream = AudioDataStream(result)
+                stream.save_to_wav_file("st_file1.wav") 
+                time.sleep(0.1)
+                st.audio("st_file1.wav")                      
             components.html("""You can try one of the following utterances:
                 
                 <li> What can you do? </li>
