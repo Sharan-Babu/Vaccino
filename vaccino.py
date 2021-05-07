@@ -469,7 +469,8 @@ if result:
             try:
                 output_df = pd.read_csv('data_file.csv')
                 st.dataframe(output_df)
-                st.caption('All rows being displayed. Tip: Email relevant appointments to yourself.')
+                st.caption('All rows being displayed')
+                st.caption('Tip: Email relevant appointments to yourself.')                 
             except:
                 st.info("Fetch appointments first.")    
 
