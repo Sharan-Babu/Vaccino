@@ -455,17 +455,23 @@ if result:
         elif intent == 'first_rows':
             # Audio which says only few rows are being displayed
             # and tell user how to show all rows
-            output_df = pd.read_csv('data_file.csv')
-            st.dataframe(output_df.head(10))
-            st.caption('First 10 rows being displayed')
+            try:
+                output_df = pd.read_csv('data_file.csv')
+                st.dataframe(output_df.head(10))
+                st.caption('First 10 rows being displayed')
+            except:
+                st.info("Fetch appointments first.")    
 
 
         elif intent == 'all_rows':
             # Audio which says all rows are being displayed
             # and prompts user to book apoointment
-            output_df = pd.read_csv('data_file.csv')
-            st.dataframe(output_df)
-            st.caption('All rows being displayed')   
+            try:
+                output_df = pd.read_csv('data_file.csv')
+                st.dataframe(output_df)
+                st.caption('All rows being displayed')
+            except:
+                st.info("Fetch appointments first.")    
 
         elif intent == 'app_details':
             components.html("""Vaccino is a Wit.ai powered application that strives
