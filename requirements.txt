@@ -6,4 +6,3 @@ azure-common==1.1.26
 bokeh
 streamlit-bokeh-events
 pandas
-email
