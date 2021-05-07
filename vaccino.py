@@ -491,8 +491,8 @@ if result:
                 <li>Get important news related to <i>Vaccines</i> and <i>Oxygen Cylinders</i>.</li>
                 <li>Fetch relevant Tweets from trusted sources.</li>
                 <li>Show Vaccination slots available in a particular district and notify yourself.</li>
-                <br>
-                </ul>""")
+                </ul>
+                <br>""")
 
                 
             components.html("""<br><b>Privacy</b>: <br>
