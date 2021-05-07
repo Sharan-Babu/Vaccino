@@ -170,9 +170,7 @@ if result:
         elif intent == 'vaccine_news':
             # Audio with summary of the page
             answer = """Here are some, important news and tweets related to vaccines. 
-                        You can use the links given to navigate to the source. To get 
-                        information related to oxygen cylinders, try saying, Any information
-                        related to oxygen cylinders? or a similar sentence."""
+                        You can use the links given to navigate to the source. To get information related to oxygen cylinders, try saying, Any information related to oxygen cylinders? or a similar sentence."""
 
             ssml_string = open("ssml.xml", "r").read().replace("my-sentence",answer).replace("my-lang","en-US").replace("my-voice","en-US-AriaRUS").replace("my-speed","0.9")   
 
