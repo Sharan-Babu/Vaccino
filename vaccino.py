@@ -145,7 +145,7 @@ if result:
                         Fees = input_df.loc[x,"Fees"]
 
                         final_html += base_html.format(x,h_name,b_name,Pin,Date,Vaccine,Capacity,Age,Timing,Fees)
-                    final_html += "<br>Book <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_IN&gl=US">Here</a>."
+                    final_html += '<br>Book <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_IN&gl=US">Here</a>.'
                     #part3 = MIMEText(end_html, 'html')
                     part2 = MIMEText(final_html, 'html')
                     msg.attach(part2)
