@@ -526,6 +526,8 @@ if result:
                 <li> Email me the details of the appointments 1 and 21. </li>
                 
                 """)
+        elif intent == '':
+            st.info("Try saying 'Help me' to know what you can do")                          
 
 
   
