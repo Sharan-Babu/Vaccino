@@ -486,12 +486,11 @@ if result:
             components.html("""Vaccino is a Wit.ai powered application that strives
                 to help people in India combat the fast spreading second wave
                 of the corona virus.<br> <br>
-                <b>Fetaures include:</b>
+                <b>Fetaures:</b>
                 <ul>
                 <li>Get important news related to <i>Vaccines</i> and <i>Oxygen Cylinders</i>.</li>
                 <li>Fetch relevant Tweets from trusted sources.</li>
-                <li>Show Vaccination slots avaialable in a particular district.</li>
-                <li>Email yourself the details of appointments and important steps to be followed</li>
+                <li>Show Vaccination slots available in a particular district and notify yourself.</li>
                 <br>
                 </ul>""")
 
