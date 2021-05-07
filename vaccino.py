@@ -124,7 +124,7 @@ if result:
                     <div style="border: 2px solid red; 
                     white-space:pre-wrap; border-radius: 5%; 
                     padding: 10px; background-color: lightyellow;
-                    width:240px;"> <b>ID</b>: {} &#10;<b>Center Name</b>: {} &#10;<b>Block Name</b>: {} &#10;<b>Pin Code</b>: {} &#10;<b>Date</b>: {} &#10;<b>Vaccine Name</b>: {} &#10;<b>Capacity</b>: {} &#10;<b>Min. Age</b>: {} &#10;Timing: {} &#10;<b>Fees</b>:{}
+                    width:240px;"><b>ID</b>: {} &#10;<b>Center Name</b>: {} &#10;<b>Block Name</b>: {} &#10;<b>Pin Code</b>: {} &#10;<b>Date</b>: {} &#10;<b>Vaccine Name</b>: {} &#10;<b>Capacity</b>: {} &#10;<b>Min. Age</b>: {} &#10;<b>Timing</b>: {} &#10;<b>Fees</b>:{}
                     </div>
                     <br>
                     """
