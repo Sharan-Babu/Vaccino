@@ -506,7 +506,7 @@ if result:
 
 
         elif intent == 'help':
-            answer = """Try one of the following utterances."""
+            answer = """You can try using one of the following utterances."""
 
             ssml_string = open("ssml.xml", "r").read().replace("my-sentence",answer).replace("my-lang","en-US").replace("my-voice","en-US-AriaRUS").replace("my-speed","0.9")   
 
