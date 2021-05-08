@@ -466,7 +466,7 @@ if result:
             # and prompts user to book apoointment
             try:
                 output_df = pd.read_csv('data_file.csv')
-                st.dataframe(output_df)
+                st.dataframe(output_df.sort_values(by='Capacity',ascending=False))
                 st.caption('All rows being displayed')
                 st.caption('Tip: Email relevant appointments to yourself.')                 
             except:
