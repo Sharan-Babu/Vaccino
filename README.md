@@ -1,6 +1,6 @@
 # Vaccino
-Submission for Facebook F8 Refresh Hackathon
+Submission for Facebook F8 Refresh Hackathon.
 
-Web App Link: https://share.streamlit.io/sharan-babu/vaccino/main/vaccino.py
+<b>Web App Link</b>: https://share.streamlit.io/sharan-babu/vaccino/main/vaccino.py
 
-Youtube Video Link:
+<b>Youtube Video Link</b>:
